@@ -1,0 +1,33 @@
+spring:
+    application:
+        name: spring-in-action-service
+    main:
+        allow-bean-definition-overriding: true
+    data:
+        mongodb:
+            host: 3.8.160.119
+            port: 27017
+            username: test
+            password: test
+            database: springDb
+            embedded:
+                enabled: false
+        rest:
+            base-path: /api
+server:
+    port: 0
+eureka:
+    client:
+        service-url:
+            defaultZone: http://18.170.92.87:8761/eureka/
+#    h2:
+#        :console:
+#            enabled: true
+#    datasource:
+#        url: jdbc:h2:mem:testdb
+#        initialization-mode: always
+#    jpa:
+#        hibernate:
+#            ddl-auto: none
+#        show-sql: true
+
