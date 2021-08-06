@@ -9,7 +9,7 @@ spring:
             port: 27017
             username: test
             password: test
-            database: springDb
+            database: spring
             embedded:
                 enabled: false
         rest:
