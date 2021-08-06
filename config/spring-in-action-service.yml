@@ -18,7 +18,7 @@ spring:
         host: 18.132.49.135
         port: 5672
         username: springUser
-        passwird: 12345678
+        password: CG56XNLI4PKxUBeIv611CEJC9GzXHSdHmFLP34kz
             
 server:
     port: 0
