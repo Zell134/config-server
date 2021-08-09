@@ -7,6 +7,11 @@ spring:
                     search-paths: config
                     username: Zell134
                     password: zellrus34
+    rabbitmq:
+        host: 18.132.49.135
+        port: 5672
+        username: springUser
+        password: CG56XNLI4PKxUBeIv611CEJC9GzXHSdHmFLP34kz
                     
 server:
     port: 8888
