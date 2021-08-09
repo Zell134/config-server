@@ -1,9 +1,5 @@
 spring:
     
-    bus:
-      enabled: true
-      
-      
     application:
         name: spring-in-action-service
         

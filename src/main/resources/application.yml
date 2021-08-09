@@ -12,6 +12,7 @@ spring:
         port: 5672
         username: springUser
         password: CG56XNLI4PKxUBeIv611CEJC9GzXHSdHmFLP34kz
+
                     
 server:
     port: 8888
