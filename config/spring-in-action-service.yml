@@ -1,8 +1,15 @@
 spring:
+    
+    bus:
+      enabled: true
+      
+      
     application:
         name: spring-in-action-service
+        
     main:
         allow-bean-definition-overriding: true
+        
     data:
         mongodb:
             host: 3.8.160.119
@@ -14,6 +21,7 @@ spring:
                 enabled: false
         rest:
             base-path: /api
+            
     rabbitmq:
         host: 18.132.49.135
         port: 5672
