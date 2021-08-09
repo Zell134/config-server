@@ -21,12 +21,11 @@ spring:
         password: CG56XNLI4PKxUBeIv611CEJC9GzXHSdHmFLP34kz
             
             
-#server:
-#    port: 0
+server:
+    port: 0
     
-#eureka:
-#    client:
-#        service-url:
-#            defaultZone: http://localhost:8761/eureka/,
-#                         http://18.134.10.80:8761/eureka/,
-#                         http://18.134.10.80:8762/eureka
+eureka:
+    client:
+        service-url:
+            defaultZone: http://18.134.10.80:8761/eureka/,
+                         http://18.134.10.80:8762/eureka
