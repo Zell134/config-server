@@ -29,3 +29,9 @@ eureka:
         service-url:
             defaultZone: http://3.9.139.73:8761/eureka/,
                          http://3.9.139.73:8762/eureka
+                         
+app:
+    rabbit:
+        topicExchangeName: topic-exchange
+        queueName: queue
+        routingKey: ingredients
