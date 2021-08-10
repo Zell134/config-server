@@ -4,3 +4,12 @@ server:
 hystrix:
     dashboard:
         proxy-stream-allow-list: localhost
+        
+turbine:
+    app-config: spring-in-action-service
+    cluster-name-expression: "'default'"
+eureka:
+    client:
+        service-url:
+            defaultZone: http://3.10.154.98:8761/eureka/,
+                         http://3.10.154.98:8762/eureka
