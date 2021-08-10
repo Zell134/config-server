@@ -8,9 +8,8 @@ hystrix:
         proxy-stream-allow-list: localhost
         
 turbine:
-    aggregator: 
-        clusterConfig: ${applications}
-        appConfig: ${applications}
+    appConfig: spring-in-action-service
+    clusterNameExpression: "'spring-in-action-service'"
 eureka:
     client:
         service-url:
