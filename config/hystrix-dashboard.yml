@@ -1,13 +1,16 @@
 server:
     port: 7979
+
+applications: spring-in-action-service
     
 hystrix:
     dashboard:
         proxy-stream-allow-list: localhost
         
 turbine:
-    app-config: spring-in-action-service
-    cluster-name-expression: new String('default')
+    aggregator: 
+        clusterConfig: ${applications}
+        appConfig: ${applications}
 eureka:
     client:
         service-url:
