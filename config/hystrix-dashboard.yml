@@ -9,7 +9,7 @@ hystrix:
         
 turbine:
     appConfig: spring-in-action-service
-    clusterNameExpression: "'spring-in-action-service'"
+    clusterNameExpression: "'default'"
 eureka:
     client:
         service-url:
