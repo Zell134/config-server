@@ -38,7 +38,7 @@ management:
     endpoints:
         web:
             exposure:
-                include: hystrix.stream, turbine.stream
+                include: turbine.stream
 
 app:
     rabbit:
