@@ -40,10 +40,6 @@ management:
             exposure:
                 include: hystrix.stream
 
-#    endpoint:
-#        hystrix:
-#            stream:
-#                enabled: true
 app:
     rabbit:
         topicExchangeName: topic-exchange
