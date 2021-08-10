@@ -34,6 +34,11 @@ eureka:
             defaultZone: http://3.10.154.98:8761/eureka/,
                          http://3.10.154.98:8762/eureka
                          
+management:
+    endpoints:
+        web:
+            exposure:
+                include: hystrix.stream
 app:
     rabbit:
         topicExchangeName: topic-exchange
