@@ -31,9 +31,10 @@ server:
 eureka:
     client:
         service-url:
-            defaultZone: http://3.10.154.98:8761/eureka/,
-                         http://3.10.154.98:8762/eureka
-                         
+            defaultZone: http://3.10.154.98:8761/eureka
+    instance:
+        lease-renewal-interval-in-seconds: 20
+        
 management:
     endpoints:
         web:
