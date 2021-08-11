@@ -40,20 +40,7 @@ management:
         web:
             exposure:
                 include: "*"
-            base-path: /actuator
-            cors:
-                allowed-origins: true
-        health:
-            enabled: true
-            show-details: always
-        jmx:
-            exposure:
-                include: "*"
-                
-turbine:
-    app-config: spring-in-action-service
-    cluster-name-expression: "'default'"
-    
+               
 hystrix:
     dashboard:
         proxy-stream-allow-list: "*"
