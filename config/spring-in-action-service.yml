@@ -49,14 +49,6 @@ management:
         jmx:
             exposure:
                 include: "*"
-turbine:
-    aggregator:
-        cluster-config: default
-    app-config: google
-    cluster-name-expression: new String("default")
-    combine-host-port: true
-    instanceUrlSuffix:
-        default: actuator/hystrix.stream
 
 app:
     rabbit:

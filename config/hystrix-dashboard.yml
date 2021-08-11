@@ -7,9 +7,15 @@ hystrix:
     dashboard:
         proxy-stream-allow-list: localhost
         
+  
 turbine:
-    appConfig: spring-in-action-service
-    clusterNameExpression: "'default'"
+    aggregator:
+        cluster-config: default
+    app-config: spring-in-action-service
+    cluster-name-expression: new String("default")
+    combine-host-port: true
+    instanceUrlSuffix:
+        default: actuator/hystrix.stream
 eureka:
     client:
         service-url:
