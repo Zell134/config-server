@@ -39,7 +39,24 @@ management:
     endpoints:
         web:
             exposure:
-                include: turbine.stream
+                include: "*"
+            base-path: /actuator
+            cors:
+                allowed-origins: true
+        health:
+            enabled: true
+            show-details: always
+        jmx:
+            exposure:
+                include: "*"
+turbine:
+    aggregator:
+        cluster-config: default
+    app-config: google
+    cluster-name-expression: new String("default")
+    combine-host-port: true
+    instanceUrlSuffix:
+        default: actuator/hystrix.stream
 
 app:
     rabbit:
