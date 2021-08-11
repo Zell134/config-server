@@ -58,6 +58,10 @@ turbine:
     combine-host-port: true
     instanceUrlSuffix:
         default: actuator/hystrix.stream
+hystrix:
+    dashboard:
+        proxy-stream-allow-list: "*"
+        proxy-stream-allow-list: localhost
 
 app:
     rabbit:
