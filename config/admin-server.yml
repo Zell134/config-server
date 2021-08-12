@@ -1,11 +1,2 @@
 server:
     port: 9090
-spring:
-    boot:
-        admin:
-            client:
-                instance:
-                    metadata:
-                        user:
-                            name: spring
-                            password: springPassword

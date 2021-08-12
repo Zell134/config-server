@@ -1,10 +1,5 @@
 spring:
     
-    security:
-        user:
-            name: spring
-            password: springPassword
-    
     application:
         name: spring-in-action-service
         
