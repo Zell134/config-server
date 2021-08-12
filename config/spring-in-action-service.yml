@@ -1,5 +1,18 @@
 spring:
     
+    boot:
+        admin:
+            client:
+                instance:
+                    metadata:
+                        user:
+                            name: spring
+                            password: springPassword
+    security:
+        user:
+            name: spring
+            password: springPassword
+            
     application:
         name: spring-in-action-service
         
