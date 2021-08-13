@@ -6,8 +6,8 @@ spring:
         user:
             name: spring
             password: springPassword
-    boot:
-        admin:
-            client:
-                username: ${spring.security.user.name}
-                password: ${spring.security.user.name}
+#    boot:
+#        admin:
+#            client:
+#                username: ${spring.security.user.name}
+#                password: ${spring.security.user.name}
