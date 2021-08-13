@@ -1,17 +1,17 @@
 spring:
-    
+    security:
+        user:
+            name: spring
+            password: springPassword
     boot:
         admin:
             client:
                 instance:
                     metadata:
                         user:
-                            name: spring
-                            password: springPassword
-    security:
-        user:
-            name: spring
-            password: springPassword
+                            name: ${spring.security.user.name}
+                            password: ${spring.security.user.password}
+    
             
     application:
         name: spring-in-action-service

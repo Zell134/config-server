@@ -9,5 +9,5 @@ spring:
     boot:
         admin:
             client:
-                username: spring
-                password: springPassword
+                username: ${spring.security.user.name}
+                password: ${spring.security.user.name}
